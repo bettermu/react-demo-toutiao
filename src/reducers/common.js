@@ -2,11 +2,11 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 10:11:13 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-08 10:46:16
+ * @Last Modified time: 2018-05-08 21:47:46
  * 通用组件reducer
  */
 //handleActions相当于switch
-import { handleActions } from 'redux-action'
+import { handleActions } from 'redux-actions'
 
 //文章信息state
 const state = {
@@ -14,7 +14,7 @@ const state = {
 }
 
 //与文章有关的state reducer
-export const article = handleActions({}, state)
+//export const article = handleActions({}, state)
 
 
 //公用弹窗以及loading state
