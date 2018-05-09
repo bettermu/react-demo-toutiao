@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 15:22:53 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-08 21:17:27
+ * @Last Modified time: 2018-05-09 15:02:00
  * 路由跳转配置文件
  */
 
@@ -13,6 +13,7 @@ const _import_components = file => asyncComponent(() => import(`components/${fil
 const _import_views = file => asyncComponent(() => import(`views/${file}`))
 
 import NotFound from 'views/Error/404'
+import Account from 'views/Account'
 
 
 //包含在layout里的视图
@@ -64,7 +65,6 @@ export const notLayoutRouterMap = [
   {
     path: '/record/:type',
     name: '收藏/历史',
-
     component: _import_views('Record')
   },
   {

@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 15:11:32 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-08 21:18:28
+ * @Last Modified time: 2018-05-09 15:06:26
  * 异步动态加载Component 
  */
 
@@ -21,6 +21,7 @@ export default loadComponent => (
       NProgress.start()
       try {
         const { default: Component } = await loadComponent()
+        this.setState({Component})
       } catch (err) {
         console.error(`Cannot load component in <AsyncComponent />`);
         throw err

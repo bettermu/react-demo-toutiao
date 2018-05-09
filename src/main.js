@@ -23,6 +23,7 @@ import 'utils/rem'
 
 //解决ios下 onclick事件无效、
 import initReactFastClick from 'react-fastclick'
+initReactFastClick()
 
 ReactDom.render(
   <Provider store={store}>
