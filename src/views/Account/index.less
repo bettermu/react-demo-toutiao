@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-09 16:52:23 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-09 17:02:33
+ * @Last Modified time: 2018-05-10 10:47:11
  */
 
  .account-container {
@@ -12,7 +12,7 @@
      background-color: #777;
    }
    .hd-t{
-     padding:0,2rem;
+     padding:0.2rem;
      .info {
        color:#fff;
        >* {
@@ -23,6 +23,87 @@
          width:0.5rem;
          height:0.5rem;
          border-radius:50%;
+       }
+     }
+   }
+   .hd-m {
+     font-size:0.12rem;
+     color:@font-gray;
+     padding-bottom:0.1rem;
+     span {
+       color:#fff;
+       margin-bottom:0.08rem;
+     }
+     .hd-m-t {
+       color:#aaa;
+     }
+   }
+   .hd-b {
+     padding:0.1rem 0;
+     background:#fff;
+   }
+   .hd-m-item, .hd-b-item {
+     width:e("calc(100% /3)");
+     height:0.5rem;
+     flex-direction: column;
+   }
+
+   .hd-b-item {
+     font-size:0.12rem;
+     svg {
+       font-size:0.2rem;
+       margin-bottom:o.o8rem;
+     }
+     &:nth-child(1){
+       svg {
+         color:@theme-blue;
+       }
+     }
+     &:nth-child(2){
+       svg {
+         color:@theme-green;
+       }
+     }
+     &:nth-child(3){
+       svg {
+         color:@theme-red;
+       }
+     }
+   }
+
+   .body-wrapper {
+     border-left:none;
+     border-right:none;
+   }
+   .li {
+     height:0.5rem;
+     line-height:0.5rem;
+     width:100%;
+     padding:0 0.1rem;
+     background-color:#fff;
+     display:flex;
+     justify-content:space-between;
+     align-items: center;
+     svg {
+       color:#bbb;
+     }
+     span {
+       color:@font-gray;
+       font-size:0.12rem;
+       margin-right:0.08rem;
+     }
+     &:nth-child(1){
+       margin:0.1rem 0;
+       &:before {
+         border-left:none;
+         border-right:none;
+       }
+     }
+     &:nth-child(3) {
+      margin-bottom: 0.1rem;
+      &:before {
+         border-left: none;
+         border-right: none;
        }
      }
    }

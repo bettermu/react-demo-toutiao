@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 16:59:50 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-08 20:12:06
+ * @Last Modified time: 2018-05-10 14:05:51
  * 弹窗组件
  *
  */
@@ -44,6 +44,7 @@ export default class extends React.Component {
       show: false
     })
     const { success, hideAlert } = this.props
+    console.log(this.props)
     hideAlert()
     success && success()
   }

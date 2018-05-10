@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-09 14:43:07 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-09 16:51:49
+ * @Last Modified time: 2018-05-10 14:09:12
  * 个人中心组件 body
  */
 
@@ -21,9 +21,22 @@ export default class extends React.Component {
 
     //判断是否登录
     if (!name) {
-      //非登录逻辑 跳转到登录页面
+      //非登录逻辑 显示弹窗
+      showAlert({
+        content: '请先登录!',
+        success: () => {
+          //上滑到顶部
+          history.slideStates = 'top'
+          //跳转到登录页
+          history.push('/login')
+        }
+      })
+
+
     } else {
       //跳转页面
+      history.slideStatus = 'left'
+      history.push(path)
     }
 
   }

@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-09 14:44:12 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-09 16:38:16
+ * @Last Modified time: 2018-05-10 09:24:55
  * 个人中心组件 head
  */
 import React from 'react'
@@ -27,7 +27,8 @@ export default class extends React.Component {
   }
   //跳转登录页
   login = () => {
-
+    this.props.history.slideStatus='top'
+    this.props.history.push('/login')
   }
   //跳转到收藏历史的tab页面
   skipRecord = (index) => {

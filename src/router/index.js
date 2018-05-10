@@ -3,7 +3,7 @@ import { Route, Switch, Redirect, HashRouter } from 'react-router-dom'
 import { AnimatedSwitch } from 'react-router-transition'
 import { routes, layoutRouterMap, notLayoutRouterMap } from './config'
 import Layout from 'src/App'
-//import GlobalComponents from 'components/GlobalComponents'
+import GlobalComponents from 'components/GlobalComponents'
 import { css } from 'glamor'
 
 const renderRouteComponent = routes => routes.map((route, index) => {
@@ -72,7 +72,7 @@ class Router extends React.Component {
             history.slideStatus = false
             return (
               <div style={{ width: '100%', height: '100%' }}>
-                
+                <GlobalComponents />
                 <AnimatedSwitch
                 {...pageTransitions}
                 runOnMount={location.pathname === '/'}
