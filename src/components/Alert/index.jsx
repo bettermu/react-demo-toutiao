@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 16:59:50 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-10 14:05:51
+ * @Last Modified time: 2018-05-11 10:49:15
  * 弹窗组件
  *
  */
@@ -45,7 +45,9 @@ export default class extends React.Component {
     })
     const { success, hideAlert } = this.props
     console.log(this.props)
+    //隐藏弹窗
     hideAlert()
+    //执行成功回调
     success && success()
   }
 
