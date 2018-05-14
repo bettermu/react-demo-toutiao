@@ -58,7 +58,7 @@
     6、京东特供页面编写  
     7、微头条headline相关数据处理  
 
-* 2018.5.14
+* 2018.5.14  
     1、headline相关数据整合  
     2、headline页面结构搭建  
     3、headline页面topbar组件编写  
