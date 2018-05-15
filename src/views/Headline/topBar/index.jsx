@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-14 14:49:28 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-14 15:33:49
+ * @Last Modified time: 2018-05-15 10:55:09
  * 微头条tab栏组件 
  */
 
@@ -65,7 +65,7 @@ export default class extends React.Component {
   render() {
     const {list,textBol,content,show}=this.state
     return (
-      <div className="headline-top-bar df-c">
+      <div className="headeline-top-bar df-c">
         {
           list.map((item,index)=>(
             <div className="item border-half-right" key={index} onClick={this.show.bind(this,item.title)}>

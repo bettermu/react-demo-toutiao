@@ -62,7 +62,11 @@
     1、headline相关数据整合  
     2、headline页面结构搭建  
     3、headline页面topbar组件编写  
-    4、headline页面text组件编写
+    4、headline页面text组件编写  
+
+* 2018.5.15  
+    1、headline组件相关样式编写和调整   
+    2、上拉下滑组件PullLoad编写   
 
 * 先完成基本结构框架的搭建，项目运行起来，后续的开发工作，将利用空闲时间慢慢完成。
 

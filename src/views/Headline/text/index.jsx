@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-14 15:34:31 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-14 16:21:49
+ * @Last Modified time: 2018-05-15 10:59:16
  * 发表文字页面
  */
 
@@ -55,7 +55,7 @@ export default class extends React.Component {
     const { val } = this.state
     return (
       <div className={`text-wrapper ${this.props.className}`}>
-        <div className="title df-c border-half-bottom">
+        <div className="title df-sb border-half-bottom">
           <div className="t-l" onClick={this.props.onClose}>取消</div>
           <div className="t-r t-disable" className={val ? 't-active' : ''} onClick={this.send.bind(this)}>发布</div>
         </div>
