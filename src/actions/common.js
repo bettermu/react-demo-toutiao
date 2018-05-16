@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 10:10:36 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-10 15:11:26
+ * @Last Modified time: 2018-05-16 16:02:38
  * 
  * 通用组件action
  */
@@ -21,4 +21,4 @@ export const hideAlert=createAction('HIDE_ALERT')
 //显示loading
 export const showLoading=createAction('SHOW_LOADING')
 //隐藏loading
-export const hideLoading=createAction('HIDE_LODING')
+export const hideLoading=createAction('HIDE_LOADING')

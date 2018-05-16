@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-11 15:48:52 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-11 16:23:56
+ * @Last Modified time: 2018-05-16 08:49:54
  * 微头条actions
  */
 import { createAction } from 'redux-actions'
@@ -29,6 +29,7 @@ export const getHeadlineList = (params) => dispatch => {
     axios.get('headline/list', params)
       .then(res => {
         const list = res.data.list
+        console.log(res.data)
         dispatch(createAction('GET_HEADLINE_LIST')(list))
         resolve(list)
       }).catch(err => {

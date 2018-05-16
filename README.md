@@ -66,7 +66,15 @@
 
 * 2018.5.15  
     1、headline组件相关样式编写和调整   
-    2、上拉下滑组件PullLoad编写   
+    2、上拉下滑组件PullLoad编写  
 
+* 2018.5.16  
+    1、PullLoad样式编写  
+    2、headline组件数据加载相关bug以及样式处理 
+    3、文章详情页article编写    
+    4、circleLoading加载组件编写  
+    5、文章详情页article 相关action reducer编写  
+    6、我的收藏record页面编写      
+  
 * 先完成基本结构框架的搭建，项目运行起来，后续的开发工作，将利用空闲时间慢慢完成。
 

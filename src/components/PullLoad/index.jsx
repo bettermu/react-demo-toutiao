@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-15 11:07:47 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-15 16:39:20
+ * @Last Modified time: 2018-05-16 09:31:51
  * 上拉下滑组件PullLoad
  */
 
@@ -61,7 +61,7 @@ class PullLoad extends React.Component {
   static propTypes = {
     handleLoad: PropTypes.func, //加载回调函数，必须返回promise
     handleRefresh: PropTypes.func,//刷新回调函数，必须返回promise
-    hasMore: PropTypes.boll,//是否还有更多内容可加载
+    hasMore: PropTypes.bool,//是否还有更多内容可加载
     offsetScrollTop: PropTypes.number,//必须大于零，使触发刷新往下偏移，隐藏部分顶部内容
     downEnough: PropTypes.number,//下拉满足刷新的距离
     distanceBottom: PropTypes.number,//距离底部距离触发加载更多
@@ -138,7 +138,7 @@ class PullLoad extends React.Component {
     if (diffY > this.defaultConfig.downEnough) {
       status = 'enough'
     } else {
-      status: 'pulling'
+      status = 'pulling'
     }
     this.setState({ status })
   }
@@ -205,6 +205,7 @@ class PullLoad extends React.Component {
           curY,
           diffY
         })
+        e.preventDefault()
       } else if (diffY < 0 && (scrollH - scrollTop - w) < this.defaultConfig.distanceBottom) {
 
         //如果移动距离小于0 则为上拉加载
@@ -258,7 +259,7 @@ class PullLoad extends React.Component {
       <div className={containerClassName} ref="container">
         <div className="pull-load-body" style={pullStyle}>
           <div className="pull-load-head"><HeadNode /></div>
-
+          {children}
           <div className="pull-load-footer"><FooterNode status={status} hasMore={hasMore} /></div>
         </div>
       </div>

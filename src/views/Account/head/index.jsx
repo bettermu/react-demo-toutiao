@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-09 14:44:12 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-10 09:24:55
+ * @Last Modified time: 2018-05-16 13:46:23
  * 个人中心组件 head
  */
 import React from 'react'
@@ -32,7 +32,10 @@ export default class extends React.Component {
   }
   //跳转到收藏历史的tab页面
   skipRecord = (index) => {
-
+    const {history}=this.props
+    console.log(index)
+    history.slideStatus='left'
+    history.push(`/record/${index}`)
   }
 
   render() {
@@ -65,7 +68,7 @@ export default class extends React.Component {
         <div className="hd-b df-c border-half-bottom">
           {
             resList.map((v, i) => (
-              <div className="hd-b-item df-c" key={i} onClick={e => { this.skipRecord.bind(this, i) }}>
+              <div className="hd-b-item df-c" key={i} onClick={e => { this.skipRecord(i) }}>
                 <Icon iconName={v.icon}></Icon>
                 <div className="hd-b-t">{v.title}</div>
               </div>

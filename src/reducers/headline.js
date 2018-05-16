@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-11 16:24:21 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-11 16:34:51
+ * @Last Modified time: 2018-05-16 08:55:14
  * 微头条reducer
  */
 
@@ -20,6 +20,7 @@ export const headline = handleActions({
       state.hasMore = false
     }
     state.headlineList = state.headlineList.concat(list)
+    //console.log(state.headlineList)
     return { ...state }
   },
   ADD_HEADLINE_LIST: (state, action) => {
