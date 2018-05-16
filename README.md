@@ -70,7 +70,7 @@
 
 * 2018.5.16  
     1、PullLoad样式编写  
-    2、headline组件数据加载相关bug以及样式处理 
+    2、headline组件数据加载相关bug以及样式处理   
     3、文章详情页article编写    
     4、circleLoading加载组件编写  
     5、文章详情页article 相关action reducer编写  
