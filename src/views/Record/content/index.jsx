@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-16 14:41:29 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-16 15:52:24
+ * @Last Modified time: 2018-05-16 15:35:24
  * 收藏历史content组件
  */
 
@@ -36,8 +36,9 @@ export default class extends React.Component {
     return (
       <section className={`swiper-box ${className}`}>
         <p className="tip">昨天总共阅读了{type.list.length || 0}篇文章</p>
-        <PullLoad className="pullload-wrapper" handleLoad={this.handleLoad.bind(this)} handleRefresh={this.handleRefresh.bind(this)} hasMore={this.state.hasMore}>
+        <PullLoad className="pullload-wrapper" handleLoad={this.handleLoad.bind(this)} handleRefresh={this.handleRefresh.bind(this)} hasMore={this.state.hasMore} >
           <ul>
+
             {
               type.list.map((item, i) => (
                 <li key={i} className="item border-half-bottom" onClick={e => {
@@ -99,6 +100,7 @@ export default class extends React.Component {
               ))
             }
           </ul>
+
         </PullLoad>
       </section>
     )

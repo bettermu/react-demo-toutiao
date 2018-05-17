@@ -74,7 +74,14 @@
     3、文章详情页article编写    
     4、circleLoading加载组件编写  
     5、文章详情页article 相关action reducer编写  
-    6、我的收藏record页面编写      
+    6、我的收藏record页面编写   
+
+* 2018.5.17   
+    1、我的收藏record样式编写    
+    2、search页面action和reducer编写  
+    3、search页面head和body组件编写  
+    4、search页面样式表编写  
+    5、home页面actions和reducer编写         
   
 * 先完成基本结构框架的搭建，项目运行起来，后续的开发工作，将利用空闲时间慢慢完成。
 
