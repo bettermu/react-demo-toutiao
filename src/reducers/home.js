@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-17 15:21:21 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-17 16:02:48
+ * @Last Modified time: 2018-05-18 16:01:35
  * home页reducer
  */
 
@@ -32,7 +32,7 @@ export const home = handleActions({
     const news = action.payload
     let index = state.newsList.findIndex(tag => tag.title === news.title)
     state.newsList.splice(index, 1)
-    let newsList = state.newsList.map(({ list, ...other }) => ({ ...other }))
+    let newsList = state.newsList.map(({ list, ...other }) => ({ ...other })) //过滤掉list数据
     Local.set('react_newList', JSON.stringify(newsList))
     return { ...state }
   },

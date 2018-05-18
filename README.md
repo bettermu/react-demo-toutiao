@@ -81,7 +81,14 @@
     2、search页面action和reducer编写  
     3、search页面head和body组件编写  
     4、search页面样式表编写  
-    5、home页面actions和reducer编写         
+    5、home页面actions和reducer编写    
+
+* 2018.5.18  
+    1、新闻分类数据data.js编写   
+    2、新闻分类弹出栏组件编写    
+    3、home页topbar组件编写    
+    4、home页content组件编写  
+    5、home页样式以及结构编写      
   
 * 先完成基本结构框架的搭建，项目运行起来，后续的开发工作，将利用空闲时间慢慢完成。
 

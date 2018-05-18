@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-10 09:17:22 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-11 15:18:58
+ * @Last Modified time: 2018-05-18 16:13:12
  * Login 登录页面
  */
 
@@ -58,7 +58,7 @@ export default class extends React.Component {
         password
       })
       setFooterList({ title: '我的', icon: 'account1', path: '/account' })
-      console.log(this.props)
+      //console.log(this.props)
       history.slideStatus = 'bottom'
       history.goBack()
       

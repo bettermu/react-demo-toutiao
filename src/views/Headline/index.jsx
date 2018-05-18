@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-14 13:56:54 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-16 08:59:50
+ * @Last Modified time: 2018-05-18 16:10:41
  * 微头条页面
  */
 import React from 'react'
@@ -23,7 +23,7 @@ export default class extends React.Component {
   componentWillMount() {
     //初始化加载数据
     const { getHeadlineList, state: { headline: { hasMore } } } = this.props
-    console.log(getHeadlineList)
+    //consoleconsole.log(getHeadlineList)
     //如果没有更多数据 函数停止执行
     if (!hasMore) return
 
@@ -78,7 +78,7 @@ export default class extends React.Component {
 
   render() {
     const { headline: { headlineList, hasMore } } = this.props.state
-    console.log(headlineList)
+    //console.log(headlineList)
     return (
       <article className="headline-wrapper">
         <section>
