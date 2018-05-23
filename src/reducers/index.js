@@ -2,7 +2,7 @@
  * @Author: bettermu 
  * @Date: 2018-05-08 21:44:08 
  * @Last Modified by: bettermu
- * @Last Modified time: 2018-05-17 16:03:34
+ * @Last Modified time: 2018-05-23 10:41:11
  * reducer
  */
 
@@ -14,6 +14,7 @@ import * as article from './article'
 import * as record from './record'
 import * as search from './search'
 import * as home from './home'
+import * as video from './video'
 
 export default combineReducers({
   ...common,
@@ -22,5 +23,6 @@ export default combineReducers({
   ...article,
   ...record,
   ...search,
-  ...home
+  ...home,
+  ...video
 })
