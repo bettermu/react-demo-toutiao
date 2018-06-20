@@ -93,7 +93,14 @@
 * 2018.5.23  
     1、视频模块的编写   
     2、视频模块actions和reducers编写  
-    3、组件和样式编写    
+    3、组件和样式编写  
+
+* 2018.6.20  
+
+
+相关效果图的展示： 
+ 
+![](https://github.com/bettermu/blog-picture-store/blob/master/toutiao/%E6%95%88%E6%9E%9C%E5%9B%BE1.gif?raw=true) ![](https://github.com/bettermu/blog-picture-store/blob/master/toutiao/%E6%95%88%E6%9E%9C%E5%9B%BE2.gif?raw=true) 
 
   
 * 先完成基本结构框架的搭建，项目运行起来，后续的开发工作，将利用空闲时间慢慢完成。
